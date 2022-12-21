@@ -1,11 +1,32 @@
 describe('API TEST WITH CYPRESS', () => {
+
   it('API Test-Status Validation', () => {
-    cy.request('https://pokeapi.co/api/v2/pokemon/ditto').as('pokemon')
-    cy.get('@pokemon').its('status').should('equal', 200)
-  })
+    cy.request({
+      method: 'GET',
+      url: 'https://pokeapi.co/api/v2/pokemon/35'
+    })
+      .then((response) => {
+        expect(response.status).equal(200)
+      });
+  });
 
   it('API Test-validate Name value', () => {
-    cy.request('https://pokeapi.co/api/v2/pokemon/ditto').as('pokemon')
-    cy.get('@pokemon').its('body').should('include', { name: 'ditto' })
-  })
+    cy.request({
+      method: 'GET',
+      url: 'https://pokeapi.co/api/v2/pokemon/35'
+    })
+      .then((response) => {
+        expect(response.body.name).equal('clefairy')
+      });
+  });
+
+  it('API Test-validate Weight value', () => {
+    cy.request({
+      method: 'GET',
+      url: 'https://pokeapi.co/api/v2/pokemon/35'
+    })
+      .then((response) => {
+        expect(response.body.weight).equal(75)
+      });
+  });
 })
