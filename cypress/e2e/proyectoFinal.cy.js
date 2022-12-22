@@ -10,6 +10,7 @@ describe('UI TESTING WITH CYPRESS', () => {
   const expectedMonitor = 'Apple monitor 24'
   const expectedDeletedPhone = 'Nokia lumia 1520'
   const expectedUser = 'user232'
+
   it('Adding Samsung galaxy s6 to the cart', () => {
     const home = new LandingPageSGS6
     const SamsungGalaxyS6 = home.clickSamsungGalaxyS6()
