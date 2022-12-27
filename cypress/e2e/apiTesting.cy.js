@@ -1,9 +1,9 @@
 describe('API TEST WITH CYPRESS only using GET method', () => {
-  let method = 'GET'
-  let url = 'https://pokeapi.co/api/v2/pokemon/35'
-  let statusOK = 200
-  let pokemonName = 'clefairy'
-  let pokemonWeight = 75
+  const method = 'GET'
+  const url = 'https://pokeapi.co/api/v2/pokemon/35'
+  const statusOK = 200
+  const pokemonName = 'clefairy'
+  const pokemonWeight = 75
 
   it('API Test-Status OK Validation', () => {
     cy.request({

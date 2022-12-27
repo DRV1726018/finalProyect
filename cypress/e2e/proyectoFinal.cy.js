@@ -1,9 +1,9 @@
-import { LandingPageSGS6 } from "../pages/landingPage"
-import { LandingPageSV } from "../pagesLaptop/landingPage"
-import { LandingPageAM } from "../pageMonitor/landingPage"
-import { LandingPageNL } from "../pageDeletedPhone/landingPage"
-import { DeletedPhone } from "../pageDeletedPhone/deletedPhone"
-import { Login } from "../pageLogin/landingPage"
+import { LandingPageSGS6 } from "../pageObject/pages/landingPage"
+import { LandingPageSV } from "../pageObject/pagesLaptop/landingPage"
+import { LandingPageAM } from "../pageObject/pageMonitor/landingPage"
+import { LandingPageNL } from "../pageObject/pageDeletedPhone/landingPage"
+import { DeletedPhone } from "../pageObject/pageDeletedPhone/deletedPhone"
+import { Login } from "../pageObject/pageLogin/landingPage"
 describe('UI TESTING WITH CYPRESS', () => {
   const expectedPhone = 'Samsung galaxy s6'
   const expectedLaptop = 'Sony vaio i5'
