@@ -30,6 +30,4 @@ npx cypress open
 ```
 
 
-## License
-This is an internal Endava project.
-[ENDAVA](https://www.endava.com/)
+
